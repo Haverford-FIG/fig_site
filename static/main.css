@@ -1,0 +1,9 @@
+#menuContainer {
+ width:20%;
+ background-color:orange;
+}
+
+#contentContainer {
+ width:80%;
+ background-color:blue;
+}
