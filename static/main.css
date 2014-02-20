@@ -8,11 +8,15 @@ body {
  border-radius:25px;
  padding:20px;
  margin-top:20px;
+ font-size:24px;
+ color:black;
+ display:block;
 }
 
 #menuContainer {
  width:20%;
  height:100%;
+ float:left;
 }
 
 #contentContainer {
