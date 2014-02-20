@@ -1,9 +1,22 @@
+body {
+ padding:0px;
+ margin:0px;
+}
+
+.menuButton{
+ background-color:white;
+ border-radius:25px;
+ padding:20px;
+ margin-top:20px;
+}
+
 #menuContainer {
  width:20%;
- background-color:orange;
+ height:100%;
 }
 
 #contentContainer {
  width:80%;
- background-color:blue;
+ height:100%;
+ background-color:#E5F3FF;
 }
