@@ -1,26 +1,137 @@
+/* ############################# */
+/*     Load Google Fonts   */
+@font-face {
+  font-family: 'Alegreya Sans SC';
+    font-style: normal;
+      font-weight: 400;
+        src: local('Alegreya Sans SC'), local('AlegreyaSansSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/6kgb6ZvOagoVIRZyl8XV-KisNWI8qEu_hw_BXmaMF84.woff) format('woff');
+	}
+	@font-face {
+	  font-family: 'Alegreya Sans SC';
+	    font-style: normal;
+	      font-weight: 700;
+	        src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/AjAmkoP1y0Vaad0UPPR465pg9qZ23bCDPZI9Je_bw7E.woff) format('woff');
+		}
+		@font-face {
+		  font-family: 'Alegreya Sans SC';
+		    font-style: italic;
+		      font-weight: 400;
+		        src: local('Alegreya Sans SC Italic'), local('AlegreyaSansSC-Italic'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/trwFkDJLOJf6hqM93944kfZ3aPmwBU9Ffnzf9nFAeC8.woff) format('woff');
+			}
+
+/* ############################# */
+
+
 body {
  padding:0px;
  margin:0px;
+ min-height:600px;
+ min-width:600px;
+ font-family: "Alegreya Sans SC";
+ font-size:18px;
+ background-color:maroon;
 }
 
+a, a:visited {
+ text-decoration:none;
+ color:maroon;
+}
+
+a:hover {
+ color:red;
+}
+
+
+
 .menuButton{
- background-color:white;
- border-radius:25px;
- padding:20px;
- margin-top:20px;
+ padding-top:20px;
+ padding-bottom:20px;
+ margin-bottom:40px;
+
  font-size:24px;
  color:black;
- display:block;
+ width:100%;
+ display:inline-block;
 }
 
 #menuContainer {
+ position:relative;
+ text-align:center;
  width:20%;
  height:100%;
  float:left;
+ background-color:white;
+}
+
+#menu {
+ position:absolute;
+ margin-top:35%;
 }
 
 #contentContainer {
- width:80%;
+ overflow:auto;
+ position:relative;
  height:100%;
- background-color:#E5F3FF;
+ width:80%;
+ float:right;
 }
+
+
+.header {
+ color:white;
+ font-size:24px;
+ padding-bottom:5px;
+ padding-top:25px;
+ text-align:center;
+ width:100%;
+}
+
+
+
+#menuFIGLeaf {
+ display:inline-block;
+ position:relative;
+ top:20px;
+}
+
+.viewport {
+ overflow:hidden;
+ position:relative;
+ width:100%;
+ height:300px;
+}
+
+.memberList {
+ position:absolute;
+ width:100%;
+ padding:0px;
+ margin:0px;
+ list-style-type:none;
+}
+.memberList li {
+ text-align:center;
+ padding:8px;
+ background-color:white;
+
+ transition: background-color .25s;
+ -moz-transition: background-color .25s;
+ -webkit-transition: background-color .25s;
+}
+
+.memberList a li {
+ font-size:20px;
+ background-color:#FFD1DC;
+}
+
+.memberList li:hover {
+ background-color:yellow;
+}
+
+
+
+
+
+
+
+
+
