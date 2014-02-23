@@ -6,18 +6,12 @@
       font-weight: 400;
         src: local('Alegreya Sans SC'), local('AlegreyaSansSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/6kgb6ZvOagoVIRZyl8XV-KisNWI8qEu_hw_BXmaMF84.woff) format('woff');
 	}
-	@font-face {
-	  font-family: 'Alegreya Sans SC';
-	    font-style: normal;
-	      font-weight: 700;
-	        src: local('Alegreya Sans SC Bold'), local('AlegreyaSansSC-Bold'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/AjAmkoP1y0Vaad0UPPR465pg9qZ23bCDPZI9Je_bw7E.woff) format('woff');
-		}
-		@font-face {
-		  font-family: 'Alegreya Sans SC';
-		    font-style: italic;
-		      font-weight: 400;
-		        src: local('Alegreya Sans SC Italic'), local('AlegreyaSansSC-Italic'), url(http://themes.googleusercontent.com/static/fonts/alegreyasanssc/v1/trwFkDJLOJf6hqM93944kfZ3aPmwBU9Ffnzf9nFAeC8.woff) format('woff');
-			}
+@font-face {
+  font-family: 'Ubuntu';
+    font-style: normal;
+      font-weight: 400;
+        src: local('Ubuntu'), url(http://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+	}
 
 /* ############################# */
 
@@ -52,6 +46,14 @@ a:hover {
  color:black;
  width:100%;
  display:inline-block;
+
+ transition: background-color .25s;
+ -moz-transition: background-color .25s;
+ -webkit-transition: background-color .25s;
+}
+
+.menuButton:hover {
+ background-color: #FFF0C2;
 }
 
 #menuContainer {
@@ -61,6 +63,21 @@ a:hover {
  height:100%;
  float:left;
  background-color:white;
+}
+
+#copyrightContainer {
+ font-size:14px;
+ color:white;
+ text-align:center;
+ margin:0 auto;
+}
+
+#haverLogo {
+ position:relative;
+ display:block;
+ margin:0 auto;
+ margin-bottom:30px;
+ width:150px;
 }
 
 #menu {
@@ -76,6 +93,32 @@ a:hover {
  float:right;
 }
 
+.content, .nonTextContent {
+ overflow:hidden;
+ margin:20px;
+ border-radius:5px;
+ background-color:white;
+}
+
+.content {
+ font-family:Ubuntu;
+ word-spacing:2px;
+ padding:40px;
+}
+
+.subContent {
+ text-align:center;
+ padding:20px;
+ background-color:#FFDD75;
+}
+
+.subHeader {
+ font-family: "Alegreya Sans SC";
+ font-size:24px;
+ padding-bottom:5px;
+ text-align:center;
+ width:100%;
+}
 
 .header {
  color:white;
@@ -124,7 +167,7 @@ a:hover {
 }
 
 .memberList li:hover {
- background-color:yellow;
+ background-color:#FFDD75;
 }
 
 
