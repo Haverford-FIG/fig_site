@@ -109,7 +109,16 @@ a:hover {
 .subContent {
  text-align:center;
  padding:20px;
+ margin-bottom:10px;
  background-color:#FFDD75;
+
+ transition: background-color .25s;
+ -moz-transition: background-color .25s;
+ -webkit-transition: background-color .25s;
+}
+
+.subContent:hover {
+ background-color:#FFE9A8;
 }
 
 .subHeader {
